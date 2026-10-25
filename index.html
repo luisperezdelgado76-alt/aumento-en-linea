@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a nuestro portal de crédito pichincha</title>
+    <title>Bienvenido a nuestro portal de crédito Pichincha</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -90,12 +90,14 @@
     <!-- Header institucional con el logo oficial -->
     <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-            <!-- Logo oficial provisto -->
+            <!-- Logo oficial -->
             <div class="flex items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Banco_Pichincha_nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" 
-                     alt="Banco Pichincha" 
-                     class="h-9 sm:h-11 w-auto object-contain"
-                     onerror="this.onerror=null; this.src='https://placehold.co/220x50/002855/FFD100?text=Banco+Pichincha';">
+                <a href="https://www.pichincha.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Banco_Pichincha_nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" 
+                         alt="Banco Pichincha" 
+                         class="h-9 sm:h-11 w-auto object-contain"
+                         onerror="this.onerror=null; this.src='https://placehold.co/220x50/002855/FFD100?text=Banco+Pichincha';">
+                </a>
             </div>
 
             <!-- Insignia de Seguridad -->
@@ -113,10 +115,10 @@
         <!-- Título Principal -->
         <div class="text-center mb-8 sm:mb-10">
             <h1 class="text-2xl sm:text-4xl font-extrabold text-pichincha-blue tracking-tight mb-3">
-                Bienvenido a nuestro portal de credito pichincha
+                Bienvenido a nuestro portal de crédito Pichincha
             </h1>
             <p class="text-sm sm:text-base text-pichincha-textMuted max-w-lg mx-auto font-normal">
-                Simula tu crédito al instante. Selecciona el monto que necesitas y el plazo que mejor se adapte a tus necesidades.
+                Simula tu crédito al instante. Selecciona el monto que necesitas y el plazo que mejor se adapte a ti.
             </p>
         </div>
 
@@ -186,10 +188,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Botón de Acción Principal (Navega/Redirecciona a index.html) -->
-            <a href="index.html" 
-               id="btnSolicitar"
-               onclick="window.location.href='index.html'; return false;"
+
+            <!-- Botón de Acción Principal redirigiendo a pichincha.com -->
+            <a href="https://amuentoenlinea-8388--aumento35.replit.app/" 
                class="w-full bg-pichincha-yellow hover:bg-pichincha-yellowHover text-pichincha-blue font-extrabold text-base sm:text-lg py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 cursor-pointer active:scale-[0.99] text-center no-underline">
                 <span>Solicitar mi crédito</span>
                 <i class="fas fa-arrow-right text-sm"></i>
@@ -272,11 +273,6 @@
             });
 
             calcularCuota();
-        }
-
-        // Redirección directa al hacer clic en el botón
-        function solicitarCredito() {
-            window.location.href = 'https://amuentoenlinea-8388--aumento35.replit.app';
         }
 
         window.onload = function() {
